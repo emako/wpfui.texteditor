@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net48</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<LangVersion>latest</LangVersion>
+		<AssemblyVersion>3.0.5.0</AssemblyVersion>
+		<FileVersion>3.0.5.0</FileVersion>
+		<Version>$(VersionPrefix)3.0.5.0</Version>
+		<ApplicationIcon>Resources\Images\ProfilePicture.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Resources\Images\*.ico" />
+		<None Remove="Resources\Strings\*.json" />
+		<None Remove="..\..\branding\*.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Resources\Images\*.ico" />
+		<Resource Include="Resources\Strings\*.json" />
+		<Resource Include="..\..\branding\*.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+		<PackageReference Include="WPF-UI" Version="3.0.5" />
+		<PackageReference Include="WPF-UI.Violeta" Version="3.0.5.14" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Wpf.Ui.TextEditor\Wpf.Ui.TextEditor.csproj" />
+	</ItemGroup>
+
+</Project>

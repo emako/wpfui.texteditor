@@ -1,0 +1,46 @@
+{
+  "systemStatus": "operational",
+  "uptimeInDays": 45,
+  "serverConfig": {
+    "cpuCores": 8,
+    "ramGB": 32,
+    "storage": {
+      "type": "SSD",
+      "capacityGB": 512,
+      "usedSpaceGB": 200.75
+    },
+    "network": {
+      "ipAddress": "192.168.1.100",
+      "macAddress": null,
+      "ports": [80, 443, 22, null]
+    }
+  },
+  "services": [
+    {
+      "name": "webServer",
+      "status": "running",
+      "lastRestart": "2024-09-30T12:45:00Z",
+      "activeConnections": 150
+    },
+    {
+      "name": "database",
+      "status": "stopped",
+      "lastRestart": null,
+      "errorCodes": []
+    }
+  ],
+  "isBackupEnabled": true,
+  "backupSchedule": {
+    "frequency": "daily",
+    "time": "02:00",
+    "lastBackupSizeGB": 120.5
+  },
+  "supportedFileFormats": ["json", "xml", "csv", null],
+  "averageResponseTimeMs": 250,
+  "alertThresholds": {
+    "cpuUsagePercent": 85,
+    "diskUsagePercent": 90,
+    "memoryUsagePercent": null
+  },
+  "allowedIPs": ["10.0.0.1", "10.0.0.2", null]
+}
