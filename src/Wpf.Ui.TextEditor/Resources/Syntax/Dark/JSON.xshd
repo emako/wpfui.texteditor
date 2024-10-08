@@ -5,9 +5,9 @@
     <Color name="Number" foreground="#B5CEA8" exampleText="3.14" />
     <Color name="String" foreground="#CE9178" exampleText="" />
     <Color name="Null" foreground="#569CD6" exampleText="" />
-    <Color name="FieldName" foreground="#9CDCF0" />
+    <Color name="FieldName" foreground="#B1DBFA" />
     <Color name="Punctuation1" foreground="#DA66BE" />
-    <Color name="Punctuation2" foreground="#FFD710" />
+    <Color name="Punctuation2" foreground="#F3D83D" />
     <Color name="Punctuation3" foreground="#FFFFFF" />
 
     <RuleSet name="String">
@@ -66,8 +66,8 @@
             \b0[xX][0-9a-fA-F]+|(\b\d+(\.[0-9]+)?|\.[0-9]+)([eE][+-]?[0-9]+)?
         </Rule>
     </RuleSet>
-
-    <RuleSet>
+	
+	<RuleSet>
         <Import ruleSet="Expression"/>
     </RuleSet>
 </SyntaxDefinition>

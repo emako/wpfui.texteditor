@@ -30,24 +30,25 @@
                     </ComboBox>
                 </ui:StackPanel>
             </Grid>
-            <ScrollViewer x:Name="ScrollViewer" Grid.Row="1">
-                <StackPanel>
-                    <TextBlock
-                        MinWidth="120"
-                        Margin="0,8,0,0"
-                        FontSize="14"
-                        FontWeight="Black"
-                        Text="TextEditor" />
-                    <ui:StackPanel
-                        Margin="0,8,0,0"
-                        Orientation="Horizontal"
-                        Spacing="8">
-                        <ui:Card VerticalAlignment="Top">
-                            <!--<md:MarkdownViewer Markdown="{Binding Markdown}" />-->
-                        </ui:Card>
-                    </ui:StackPanel>
-                </StackPanel>
-            </ScrollViewer>
+            <ui:Grid Grid.Row="1" RowDefinitions="Auto,Auto,*">
+                <TextBlock
+                    MinWidth="120"
+                    Margin="0,8,0,0"
+                    FontSize="14"
+                    FontWeight="Black"
+                    Text="TextEditor" />
+                <TextBox
+                    x:Name="TextBox"
+                    Grid.Row="1"
+                    Margin="0,8,0,0"
+                    Text="Sample text" />
+                <te:CodeBox
+                    x:Name="CodeBox"
+                    Grid.Row="2"
+                    Margin="0,8,0,0"
+                    Code="{Binding Code}"
+                    SyntaxHighlightingName="JSON" />
+            </ui:Grid>
         </ui:Grid>
         <ui:TitleBar Title="Wpf.Ui.Test" />
     </Grid>

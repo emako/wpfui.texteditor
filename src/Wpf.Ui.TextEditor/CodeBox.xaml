@@ -5,9 +5,10 @@
     xmlns:local="clr-namespace:Wpf.Ui.TextEditor.Controls">
 
     <Style x:Key="DefaultTextEditorStyle" TargetType="{x:Type ava:TextEditor}">
-        <Setter Property="FontFamily" Value="{DynamicResource TextThemeFontFamily}" />
+        <Setter Property="ShowLineNumbers" Value="True" />
         <Setter Property="Background" Value="Transparent" />
-        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Foreground" Value="{DynamicResource CardForeground}" />
+        <Setter Property="FontFamily" Value="{DynamicResource MonoThemeFontFamily}" />
     </Style>
 
     <Style BasedOn="{StaticResource DefaultTextEditorStyle}" TargetType="{x:Type ava:TextEditor}" />

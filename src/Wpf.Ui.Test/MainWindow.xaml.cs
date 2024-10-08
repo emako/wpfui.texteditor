@@ -23,8 +23,6 @@ public partial class MainWindow : FluentWindow
 
         Thread.Sleep(600);
         Splash.CloseOnLoaded(this, minimumMilliseconds: 1800);
-
-        ScrollViewer.ScrollToEnd();
     }
 
     protected override void OnSourceInitialized(EventArgs e)
@@ -47,7 +45,7 @@ public partial class MainWindow : FluentWindow
     }
 
     [ObservableProperty]
-    private string json = new StreamReader(ResourceHelper.GetStream("pack://application:,,,/Wpf.Ui.Test;component/Resources/Strings/Template.json")).ReadToEnd();
+    private string code = new StreamReader(ResourceHelper.GetStream("pack://application:,,,/Wpf.Ui.Test;component/Resources/Strings/Template.json")).ReadToEnd();
 }
 
 file static class ResourceHelper
