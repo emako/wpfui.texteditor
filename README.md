@@ -4,6 +4,11 @@
 
 # WPF-UI.TextEditor
 
+> [!WARNING]
+> **This repository has been archived and is no longer maintained.**
+>
+> The project has been migrated to: **[emako/wpfui.violeta](https://github.com/emako/wpfui.violeta)**
+
 [![GitHub license](https://img.shields.io/github/license/emako/wpfui.texteditor)](https://github.com/emako/wpfui.texteditor/blob/master/LICENSE) [![NuGet](https://img.shields.io/nuget/v/WPF-UI.TextEditor.svg)](https://nuget.org/packages/WPF-UI.TextEditor) [![VS 2022 Downloads](https://img.shields.io/visual-studio-marketplace/i/lepo.WPF-UI?label=vs-2022)](https://marketplace.visualstudio.com/items?itemName=lepo.WPF-UI) [![Actions](https://github.com/emako/wpfui.texteditor/actions/workflows/library.nuget.yml/badge.svg)](https://github.com/emako/wpfui.texteditor/actions/workflows/library.nuget.yml) [![Platform](https://img.shields.io/badge/platform-Windows-blue?logo=windowsxp&color=1E9BFA)](https://dotnet.microsoft.com/zh-cn/download/dotnet/latest/runtime)
 
 WPF UI TextEditor is based on WPF UI, and provides the TextBox-like viewer.
